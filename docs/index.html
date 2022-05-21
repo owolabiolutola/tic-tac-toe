@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <div class="w-full flex justify-center">
+        <div class="w-[70%]">
+    <div class="w-[70%] justify-between mt-10">
+        <div class="shadow h-8 w-[50%]  border border-red-200" style="background-color:white;" id="player1">Player 1-X</div>
+        <div class="mt-4 text-blue-400" id="game-progression">Player 1 starts</div>
+        <div class="shadow h-8 w-[50%] mt-2 border border-red-200" style="background-color:white;" id="player2">Player 2-O</div>
+
+    </div>
+    
+    <div class=" h-[50%] w-[60%] grid grid-rows-3 grid-cols-3 divide-x divide-y divide-white border-2 border-white mt-4 fields">
+<div class="bg-red-300 h-full w-[100%]" onclick="player.handleButtonClicked('cell1')" id="cell1"></div>
+<div class="bg-red-300 h-full w-[100%]" onclick="player.handleButtonClicked('cell2')" id="cell2"> </div>
+<div class="bg-red-300 h-full w-[100%]"onclick="player.handleButtonClicked('cell3')" id="cell3"> </div>
+<div class="bg-red-300 h-full w-[100%]"onclick="player.handleButtonClicked('cell4')" id="cell4"></div>
+<div class="bg-red-300 h-full w-[100%]"onclick="player.handleButtonClicked('cell5')" id="cell5"></div>
+<div class="bg-red-300 h-full w-[100%]" onclick="player.handleButtonClicked('cell6')"id="cell6"></div>
+<div class="bg-red-300 h-full w-[100%]"onclick="player.handleButtonClicked('cell7')" id="cell7"></div>
+<div class="bg-red-300 h-full w-[100%]" onclick="player.handleButtonClicked('cell8')"id="cell8"></div>
+<div class="bg-red-300 h-full w-[100%]" onclick="player.handleButtonClicked('cell9')"id="cell9"></div>
+    </div>
+
+   
+
+    
+<!--result-->
+<div class="h-10 w-20 mb-10">
+  
+  <h2 class="text-2xl text-black" id="result"></h2>
+ </div>
+
+   
+ <div class="shadow h-8 w-[50%] mt-4 border border-red-200 flex justify-between" style="background-color:white;" id="Results">X-0 <span class="ml-10"></span>  O-0</div>
+  
+  
+
+</div>
+</div>
+</body>
+
+<script src="index.js"></script>
+</html>
